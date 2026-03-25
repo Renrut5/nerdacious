@@ -206,11 +206,14 @@ def generate_html(data: Data):
 
 
 def main():
-    data = load_data("data.toml")
+    data = load_data("pages/index.toml")
     output = generate_html(data)
     with open("dist/index.html", "w") as f:
         f.write(output)
 
+    # Shows Page
+    # with open("dist/upcoming-shows.html", "w") as f:
+    #     f.write(output)
 
 if __name__ == "__main__":
     main()

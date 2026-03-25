@@ -42,7 +42,7 @@ icon = "https://cdn.simpleicons.org/paypal/ffffff"
 url = "#"
 [[sections.items]]
 title = "Venmo"
-icon = "https://cdn.simpleicons.org/venmo/ffffff"
+# icon = "https://cdn.simpleicons.org/venmo/ffffff"
 url = "#"
 [[sections.items]]
 title = "Cash App"
