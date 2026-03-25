@@ -1,0 +1,25 @@
+name = "Upcoming Shows | Nerdacious Hobbies"
+description = ""
+keywords = ""
+image = "logo.jpg"
+theme = "dark"
+primary_color = "#d81b60"
+text_align = "center"
+gtag_id = ""
+base_url = "https://renrut5.github.io/nerdacious"
+
+
+[[sections]]
+title = "2026 Shows"
+description = ""
+direction = "row"
+item_style = "filled"
+icon_size = "20px"
+[[sections.items]]
+icon = "https://cdn.simpleicons.org/instagram/ffffff"
+title = "Instagram"
+url = "https://www.instagram.com/nerdacioushobbies"
+[[sections.items]]
+icon = "https://cdn.simpleicons.org/facebook/ffffff"
+title = "Facebook"
+url = "https://www.facebook.com/nerdacioushobbies"

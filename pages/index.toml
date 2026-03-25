@@ -12,8 +12,8 @@ base_url = "https://renrut5.github.io/nerdacious"
 title = "Follow on Social"
 description = ""
 direction = "row"
-item_style = "filled"
-icon_size = "20px"
+item_style = "outline"
+icon_size = "30px"
 [[sections.items]]
 icon = "https://cdn.simpleicons.org/instagram/ffffff"
 title = "Instagram"
@@ -27,9 +27,10 @@ url = "https://www.facebook.com/nerdacioushobbies"
 direction = "column"
 item_style = "outline"
 [[sections.items]]
+icon = "https://cdn.simpleicons.org/etsy/ffffff"
 title = "Etsy Shop"
 description = ""
-url = "#"
+url = "https://www.etsy.com/shop/NerdaciousHobbies"
 
 [[sections]]
 title = "Payment Portals"
