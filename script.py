@@ -189,10 +189,7 @@ def create_header(data: Data):
 
 def create_footer():
     return h("footer", klass="container")(
-        h("small")("Generated with "),
-        h("a", klass="", href="https://github.com/thevahidal/jake/", target="_blank")(
-            "Jake"
-        ),
+        h("small")("Copyright 2026, Nerdacious Hobbies. "),
     )
 
 
