@@ -12,6 +12,8 @@ class Item:
     icon: Optional[str] = None
     embed_url: Optional[str] = None
     embed_height: str = "315"
+    target: str = "_blank"
+
 
 
 @dataclass
@@ -43,16 +45,9 @@ def load_data(file_path):
     with open(file_path, "rb") as f:
         raw_data = tomllib.load(f)
 
+    sections = raw_data.pop("sections", [])
     return Data(
-        name=raw_data.get("name", ""),
-        description=raw_data.get("description"),
-        keywords=raw_data.get("keywords"),
-        base_url=raw_data.get("base_url", ""),
-        image=raw_data.get("image"),
-        theme=raw_data.get("theme", "dark"),
-        primary_color=raw_data.get("primary_color", "#546e7a"),
-        text_align=raw_data.get("text_align", "center"),
-        gtag_id=raw_data.get("gtag_id"),
+        **raw_data,
         sections=[
             Section(
                 title=section.get("title"),
@@ -61,19 +56,9 @@ def load_data(file_path):
                 icon_size=section.get("icon_size", "24px"),
                 direction=section.get("direction", "column"),
                 item_style=section.get("item_style", "outline"),
-                items=[
-                    Item(
-                        title=item.get("title"),
-                        description=item.get("description"),
-                        url=item.get("url"),
-                        icon=item.get("icon"),
-                        embed_url=item.get("embed_url"),
-                        embed_height=item.get("embed_height", "315"),
-                    )
-                    for item in section.get("items", [])
-                ],
+                items=[Item(**item) for item in section.get("items", [])],
             )
-            for section in raw_data.get("sections", [])
+            for section in sections
         ],
     )
 
@@ -90,7 +75,7 @@ def create_section(section: Section):
                 role="button",
                 klass=f"{'outline' if section.item_style == 'outline' else ''}",
                 href=item.url,
-                target="_blank",
+                target=item.target,
             )(
                 h(
                     "img",
@@ -204,15 +189,16 @@ def generate_html(data: Data):
         ),
     ).render()
 
-
+from pprint import pprint
 def main():
     data = load_data("pages/index.toml")
+    pprint(data)
     output = generate_html(data)
     with open("dist/index.html", "w") as f:
         f.write(output)
 
     # Shows Page
-    # with open("dist/upcoming-shows.html", "w") as f:
+    # with open("dist/upcoming-events.html", "w") as f:
     #     f.write(output)
 
 if __name__ == "__main__":

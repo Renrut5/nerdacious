@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Linktree style website on GitHub."
 authors = ["Andrew Turner <aj.turner@live.com>"]
 readme = "README.md"
-
+package-mode = false
 [tool.poetry.dependencies]
 python = "^3.11"
 tinyhtml = "^1.2.0"

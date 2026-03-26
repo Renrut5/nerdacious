@@ -3,49 +3,51 @@ description = ""
 keywords = ""
 image = "logo.jpg"
 theme = "dark"
-primary_color = "#d81b60"
+primary_color = "#1791b0"
 text_align = "center"
 gtag_id = ""
 base_url = "https://renrut5.github.io/nerdacious"
 
 [[sections]]
-title = "Follow on Social"
-description = ""
-direction = "row"
-item_style = "outline"
-icon_size = "30px"
-[[sections.items]]
-icon = "https://cdn.simpleicons.org/instagram/ffffff"
-title = "Instagram"
-url = "https://www.instagram.com/nerdacioushobbies"
-[[sections.items]]
-icon = "https://cdn.simpleicons.org/facebook/ffffff"
-title = "Facebook"
-url = "https://www.facebook.com/nerdacioushobbies"
+    title = "Follow on Social"
+    description = ""
+    direction = "row"
+    item_style = "outline"
+    icon_size = "30px"
+
+    [[sections.items]]
+        icon = "https://cdn.simpleicons.org/instagram/ffffff"
+        title = "Instagram"
+        url = "https://www.instagram.com/nerdacioushobbies"
+    [[sections.items]]
+        icon = "https://cdn.simpleicons.org/facebook/ffffff"
+        title = "Facebook"
+        url = "https://www.facebook.com/nerdacioushobbies"
 
 [[sections]]
-direction = "column"
-item_style = "outline"
-[[sections.items]]
-icon = "https://cdn.simpleicons.org/etsy/ffffff"
-title = "Etsy Shop"
-description = ""
-url = "https://www.etsy.com/shop/NerdaciousHobbies"
+    direction = "column"
+    item_style = "outline"
+    
+    [[sections.items]]
+        icon = "https://cdn.simpleicons.org/etsy/ffffff"
+        title = "Etsy Shop"
+        description = "Coming Soon!"
+        url = "https://www.etsy.com/shop/NerdaciousHobbies"
 
 [[sections]]
-title = "Payment Portals"
-description = ""
-direction = "column"
-item_style = "outline"
-[[sections.items]]
-title = "PayPal"
-icon = "https://cdn.simpleicons.org/paypal/ffffff"
-url = "#"
-[[sections.items]]
-title = "Venmo"
-# icon = "https://cdn.simpleicons.org/venmo/ffffff"
-url = "#"
-[[sections.items]]
-title = "Cash App"
-icon = "https://cdn.simpleicons.org/cashapp/ffffff"
-url = "#"
+    title = "Payment Portals"
+    description = ""
+    direction = "column"
+    item_style = "outline"
+    [[sections.items]]
+    title = "PayPal"
+    icon = "https://cdn.simpleicons.org/paypal/ffffff"
+    url = "#"
+    [[sections.items]]
+    title = "Venmo"
+    # icon = "https://cdn.simpleicons.org/venmo/ffffff"
+    url = "#"
+    [[sections.items]]
+    title = "Cash App"
+    icon = "https://cdn.simpleicons.org/cashapp/ffffff"
+    url = "#"

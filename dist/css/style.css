@@ -6,9 +6,19 @@
   margin-bottom: var(--typography-spacing-vertical);
 }
 
+header {
+  padding-bottom: 0 !important;
+}
+header h1 {
+  font-size: 2em !important;
+  color: white;
+  font-weight: bold;
+}
+
 .section {
   margin-bottom: var(--block-spacing-vertical);
 }
+
 
 .items {
   display: flex;
